@@ -41,5 +41,4 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
                 .tokenStore(tokenStore)
                 .accessTokenConverter(jwtAccessTokenConverter);
     }
-
 }
