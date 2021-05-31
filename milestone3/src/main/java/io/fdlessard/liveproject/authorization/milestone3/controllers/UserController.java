@@ -1,5 +1,7 @@
-package io.fdlessard.liveproject.authorization.milestone3;
+package io.fdlessard.liveproject.authorization.milestone3.controllers;
 
+import io.fdlessard.liveproject.authorization.milestone3.domain.User;
+import io.fdlessard.liveproject.authorization.milestone3.services.UserService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

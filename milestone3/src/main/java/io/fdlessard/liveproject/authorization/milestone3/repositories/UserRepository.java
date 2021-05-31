@@ -1,5 +1,6 @@
-package io.fdlessard.liveproject.authorization.milestone3;
+package io.fdlessard.liveproject.authorization.milestone3.repositories;
 
+import io.fdlessard.liveproject.authorization.milestone3.domain.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

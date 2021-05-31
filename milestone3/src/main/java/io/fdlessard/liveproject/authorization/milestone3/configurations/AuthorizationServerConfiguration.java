@@ -1,4 +1,4 @@
-package io.fdlessard.liveproject.authorization.milestone3;
+package io.fdlessard.liveproject.authorization.milestone3.configurations;
 
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Configuration;

@@ -1,4 +1,4 @@
-package io.fdlessard.liveproject.authorization.milestone3;
+package io.fdlessard.liveproject.authorization.milestone3.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -15,7 +15,7 @@ import javax.persistence.Id;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class ClientGrantTypes {
+public class ClientGrantType {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS authority (
     PRIMARY KEY (id)
 );
 
-create table clients(
+create table client(
   id int NOT NULL AUTO_INCREMENT,
   client_id VARCHAR(255) ,
   secret VARCHAR(255),
@@ -27,10 +27,10 @@ create table clients(
   PRIMARY KEY (id)
 );
 
-create table client_grant_types (
+create table client_grant_type (
   id int NOT NULL AUTO_INCREMENT,
   grant_type VARCHAR(255),
   client_id int,
   PRIMARY KEY (id),
-  foreign key (client_id) references clients(id)
+  foreign key (client_id) references client(id)
 )

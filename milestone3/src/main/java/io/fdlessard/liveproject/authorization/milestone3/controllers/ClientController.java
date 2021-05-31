@@ -1,5 +1,7 @@
-package io.fdlessard.liveproject.authorization.milestone3;
+package io.fdlessard.liveproject.authorization.milestone3.controllers;
 
+import io.fdlessard.liveproject.authorization.milestone3.domain.Client;
+import io.fdlessard.liveproject.authorization.milestone3.services.ClientService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -13,14 +15,14 @@ public class ClientController {
     private ClientService clientService;
 
     @GetMapping("/clients")
-    public List<Clients> get() {
+    public List<Client> get() {
         return clientService.getAllClients();
     }
 
-    @PostMapping("/client")
+    @PostMapping("/clients")
     @ResponseStatus(HttpStatus.CREATED)
-    public void post(@RequestBody Clients clients) {
-        clientService.createClient(clients);
+    public void post(@RequestBody Client client) {
+        clientService.createClient(client);
     }
 
 }

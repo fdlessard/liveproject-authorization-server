@@ -1,5 +1,7 @@
-package io.fdlessard.liveproject.authorization.milestone3;
+package io.fdlessard.liveproject.authorization.milestone3.services;
 
+import io.fdlessard.liveproject.authorization.milestone3.domain.Client;
+import io.fdlessard.liveproject.authorization.milestone3.repositories.ClientRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -12,16 +14,16 @@ public class ClientService {
 
     private ClientRepository clientRepository;
 
-    public List<Clients> getAllClients() {
+    public List<Client> getAllClients() {
         return clientRepository.findAll();
     }
 
-    public void createClient(Clients clients) {
+    public void createClient(Client client) {
 
-        Optional<Clients> c = clientRepository.findUserByClientId(clients.getClientId());
+        Optional<Client> c = clientRepository.findUserByClientId(client.getClientId());
 
         if (c.isEmpty()) {
-            clientRepository.save(clients);
+            clientRepository.save(client);
         } else {
             throw new RuntimeException("Client already exists! You cannot add it twice.");
         }

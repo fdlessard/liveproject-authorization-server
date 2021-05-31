@@ -1,4 +1,4 @@
-package io.fdlessard.liveproject.authorization.milestone3;
+package io.fdlessard.liveproject.authorization.milestone3.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

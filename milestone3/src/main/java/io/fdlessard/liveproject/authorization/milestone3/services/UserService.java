@@ -1,5 +1,7 @@
-package io.fdlessard.liveproject.authorization.milestone3;
+package io.fdlessard.liveproject.authorization.milestone3.services;
 
+import io.fdlessard.liveproject.authorization.milestone3.domain.User;
+import io.fdlessard.liveproject.authorization.milestone3.repositories.UserRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -7,8 +9,8 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@Service
 @AllArgsConstructor
+@Service
 public class UserService {
 
     private UserRepository userRepository;
