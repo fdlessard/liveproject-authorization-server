@@ -1,3 +1,4 @@
 rootProject.name = 'liveproject-authorization'
 include 'milestone1'
 include 'milestone2'
+include 'milestone3'
