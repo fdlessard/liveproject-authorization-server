@@ -14,10 +14,8 @@ spring:
     username: sa
     password: password
     driverClassName: org.h2.Driver
-    url: jdbc:h2:mem:testdb;MODE=Mysql;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;INIT=CREATE SCHEMA IF NOT EXISTS SPRING
-#    url: jdbc:h2:mem:testdb;MODE=Mysql;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;
     initialization-mode: always
-#    schema: classpath:schema.sql
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
     hibernate:

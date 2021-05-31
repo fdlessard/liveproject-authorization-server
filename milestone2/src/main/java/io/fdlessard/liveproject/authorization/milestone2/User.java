@@ -9,7 +9,6 @@ import javax.persistence.*;
 import java.util.Collection;
 
 @Entity
-@Table(name = "user", schema = "spring")
 @Data
 @Builder
 @AllArgsConstructor
